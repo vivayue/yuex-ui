@@ -1,0 +1,96 @@
+.page-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #333;
+  padding: 0 20px;
+  .total {
+    padding-right: 10px;
+  }
+  .page-size {
+    padding: 4px 10px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .pagination-box {
+    display: flex;
+    button {
+      padding: 4px 10px;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 5px;
+      -webkit-appearance: none;
+      outline: none;
+      background-color: #fff;
+      border: none;
+      color: #787878;
+      cursor: pointer;
+      &.prev {
+        margin-right: 4px;
+      }
+      &.next {
+        margin-left: 4px;
+      }
+      &.disable {
+        color: rgba(0, 0, 0, 0.38);
+        cursor: not-allowed;
+        background: none;
+      }
+      i {
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        transform: rotate(45deg);
+        &.left-arrow {
+          border-bottom: 2px solid currentColor;
+          border-left: 2px solid currentColor;
+        }
+        &.right-arrow {
+          border-top: 2px solid currentColor;
+          border-right: 2px solid currentColor;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      li {
+        padding: 4px 10px;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+          0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        margin: 0 4px;
+        cursor: pointer;
+        &.poit {
+          font-weight: bold;
+        }
+        &.is-current {
+          background-color: #2196f3;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .pgsize-box {
+    position: absolute;
+    width: 100px;
+    top: 30px;
+    left: 0;
+    font-size: 14px;
+    z-index: 4;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    .pgsize-item {
+      line-height: 30px;
+      &:hover {
+        cursor: pointer;
+        background-color: #e8e9e9;
+      }
+    }
+  }
+}
