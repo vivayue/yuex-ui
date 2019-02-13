@@ -12,7 +12,7 @@
 
 <script>
 // @ is an alias to /src
-import paging from "@/components/paging.vue";
+import paging from "@/components/pager";
 
 export default {
   name: "home",
