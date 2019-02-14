@@ -132,7 +132,7 @@ export default {
         {
           staticClass: "page-size",
           on: {
-            click: this.showPageBox
+            click: () => this.showPageBox
           },
           directives: [
             {
@@ -151,9 +151,9 @@ export default {
           staticClass: "pgsize-box",
           style: {
             left: this.pgLeft + "px",
-            top: this.pgTop + "px"
-          },
-          show: this.showPgSize
+            top: this.pgTop + "px",
+            display: this.showPgSize ? "block" : "none"
+          }
         },
         [15, 50, 100, 150].map(item => {
           return h(
@@ -161,7 +161,7 @@ export default {
             {
               staticClass: "pgsize-item",
               on: {
-                click: this.selectPgSize(item)
+                click: () => this.selectPgSize(item)
               }
             },
             [item + "条/页"]
@@ -184,7 +184,7 @@ export default {
             disabled: this.current <= 1
           },
           on: {
-            click: this.changePage(this.current - 1)
+            click: () => this.changePage(this.current - 1)
           }
         },
         [
@@ -209,7 +209,7 @@ export default {
             disabled: this.current >= this.totalPage
           },
           on: {
-            click: this.changePage(this.current + 1)
+            click: () => this.changePage(this.current + 1)
           }
         },
         [
@@ -232,7 +232,7 @@ export default {
                 poit: item.text === "···"
               },
               on: {
-                click: this.changePage(item.value)
+                click: () => this.changePage(item.value)
               }
             },
             [item.text]

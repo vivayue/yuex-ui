@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <paging
+    <y-pagination
       :page-size="pagesize"
       :page-count="pageCount"
       :total.sync="total"
@@ -11,14 +11,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import paging from "@/components/pager";
-
 export default {
   name: "home",
-  components: {
-    paging
-  },
   data() {
     return {
       current: 1, // 当前页
