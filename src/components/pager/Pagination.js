@@ -132,12 +132,12 @@ export default {
         {
           staticClass: "page-size",
           on: {
-            click: () => this.showPageBox
+            click: this.showPageBox
           },
           directives: [
             {
               name: "click-outside",
-              value: "clickOutSide"
+              value: this.clickOutSide
             }
           ]
         },
@@ -178,9 +178,7 @@ export default {
             disable: this.current <= 1
           },
           attrs: {
-            type: "button"
-          },
-          props: {
+            type: "button",
             disabled: this.current <= 1
           },
           on: {
