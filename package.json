@@ -1,16 +1,16 @@
 {
-  "name": "yue-ui",
+  "name": "yuex-ui",
   "version": "0.1.0",
-  "description": "yue-ui for vue2",
+  "description": "yuex-ui for vue2",
   "author": "viva <viva68@163.com>",
-  "main": "dist/yue-ui.common.js",
+  "main": "dist/yuex-ui.common.js",
   "license": "MIT",
-  "repository": "https://github.com/vivayue/yue-ui",
+  "repository": "https://github.com/vivayue/yuex-ui",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name yue-ui ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name yuex-ui ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
