@@ -1,11 +1,18 @@
-import Vue from 'vue'
-import pager from './paging.vue'
-const Components = {
+import pager from "./pager/index.js";
+
+const version = "__VERSION__";
+const components = {
   pager
+};
+
+function install(Vue) {
+  Object.keys(components).forEach(key => {
+    Vue.use(components[key]);
+  });
 }
 
-Object.keys(Components).forEach(name => {
-  Vue.component(name, Components[name])
-})
+if (typeof window !== "undefined" && window.Vue) install(window.Vue);
 
-export default Components
+export { version, pager, install };
+
+export default { version, install, ...components };

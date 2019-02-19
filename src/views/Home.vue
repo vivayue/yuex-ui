@@ -1,6 +1,13 @@
 <template>
   <div class="home">
-    <y-pagination
+    <!-- <y-pagination
+      :page-size="pagesize"
+      :page-count="pageCount"
+      :total.sync="total"
+      :current.sync="current"
+      @change="changePage"
+    /> -->
+    <pager
       :page-size="pagesize"
       :page-count="pageCount"
       :total.sync="total"
@@ -11,6 +18,7 @@
 </template>
 
 <script>
+import { pager } from "../components/index.js";
 export default {
   name: "home",
   data() {
@@ -20,6 +28,9 @@ export default {
       pagesize: 15, // 一页多少条
       pageCount: 7 // 页码按钮的数量，当总页数超过该值时会折叠
     };
+  },
+  components: {
+    pager
   },
   methods: {
     changePage(e) {
