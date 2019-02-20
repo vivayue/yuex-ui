@@ -3,8 +3,9 @@
 
 ## Installation
 ```
-  npm install yuex-ui --save
-  yarn add yuex-ui
+npm install yuex-ui --save
+or
+yarn add yuex-ui
 ```
 ## Usage
 ```
