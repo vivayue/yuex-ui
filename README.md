@@ -12,7 +12,7 @@ import yuexUi from "yuex-ui"
 import "yuex-ui/dist/yuex-ui.css"
 Vue.use(yuexUi);
 ```
-3、参数说明(options)
+参数说明(options)
 
 参数      | 默认值(type)| 描述
 ----------|------------|-------------------------------------
@@ -21,7 +21,7 @@ total     | 0(number)  | 总记录数
 pagesize  | 15(number) | 一页多少条
 pageCount | 7(number)  | 页码按钮的数量，当总页数超过该值时会折叠
 
-3、调用翻页的方法
+调用翻页的方法
 ```
 methods:{
   changePage(e) {
