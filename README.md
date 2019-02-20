@@ -1,15 +1,18 @@
 # yuex-ui(基于vue2.0的组件库)
 
-## 如何使用？
-1、注册组件
-```
-  
-```
-2、页面使用该组件
-```
 
+## Installation
 ```
-3、参数说明
+  npm install yuex-ui --save
+  yarn add yuex-ui
+```
+## Usage
+```
+import yuexUi from "yuex-ui"
+import "yuex-ui/dist/yuex-ui.css"
+Vue.use(yuexUi);
+```
+3、参数说明(options)
 
 参数      | 默认值(type)| 描述
 ----------|------------|-------------------------------------
@@ -26,6 +29,9 @@ methods:{
   }
 }
 ```
+## browser support
+Modern browsers and Internet Explorer 11+.
+
 ## Project setup
 ```
 npm install
