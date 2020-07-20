@@ -17,6 +17,9 @@
     <div>
       <calendar></calendar>
     </div>
+    <div>
+      <button type="button" @click="testFn">点击</button>
+    </div>
   </div>
 </template>
 
@@ -37,6 +40,9 @@ export default {
     calendar
   },
   methods: {
+    testFn() {
+      this.$yxtoast("哈哈");
+    },
     changePage(e) {
       console.log(e);
     }

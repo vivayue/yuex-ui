@@ -1,0 +1,25 @@
+.yx-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100px;
+  max-width: 400px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translate3d(-50%, -50%, 0);
+  p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+  }
+}
+.yx-fade-enter-active,
+.yx-fade-leave-active {
+  transition: opacity 0.5s;
+}
+.yx-fade-enter,
+.yx-fade-leave-to {
+  opacity: 0;
+}
