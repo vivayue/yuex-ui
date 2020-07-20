@@ -1,8 +1,10 @@
 import pager from "./pager/index.js";
+import calendar from "./calendar/index.js";
 
 const version = "__VERSION__";
 const components = {
-  pager
+  pager,
+  calendar
 };
 
 function install(Vue) {
@@ -13,6 +15,6 @@ function install(Vue) {
 
 if (typeof window !== "undefined" && window.Vue) install(window.Vue);
 
-export { version, pager, install };
+export { version, pager, calendar, install };
 
 export default { version, install, ...components };

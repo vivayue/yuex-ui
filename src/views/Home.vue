@@ -14,11 +14,14 @@
       :current.sync="current"
       @change="changePage"
     />
+    <div>
+      <calendar></calendar>
+    </div>
   </div>
 </template>
 
 <script>
-import { pager } from "../components/index.js";
+import { pager, calendar } from "../components/index.js";
 export default {
   name: "home",
   data() {
@@ -30,7 +33,8 @@ export default {
     };
   },
   components: {
-    pager
+    pager,
+    calendar
   },
   methods: {
     changePage(e) {
