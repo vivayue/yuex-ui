@@ -31,10 +31,9 @@ methods:{
 }
 ```
 ## 新增组件
+1、日历组件calendar
 ```
-日历组件calendar
-使用方法
-安装后页面引入 <calendar></calendar> 即可
+使用方法：安装后页面引入 <calendar></calendar> 即可。
 
 ```
 ## browser support
